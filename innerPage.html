@@ -63,7 +63,7 @@
          <div class="main-div">
             <h3 class="dash-text">Analysis</h3>
             <form>
-                <h5>One Column</h5>
+                <h4>One Column</h4>
                 <div class="mb-3">
                   <input type="text" class="form-control" placeholder="Name" id="exampleInputEmail1" aria-describedby="emailHelp">
                   <select class="form-select select1" id="inputGroupSelect01">
@@ -77,7 +77,7 @@
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
                     <label for="floatingTextarea2">Multiple Lines</label>
                   </div>
-                  <h5>Two column</h5>
+                  <h4>Two column</h4>
                   <div class="row">
                     <div class="col">
                       <input type="text" class="form-control" placeholder="Name" aria-label="First name">
@@ -90,14 +90,14 @@
                     <div class="col">
                       <input type="password" class="form-control" placeholder="Password" aria-label="First name">
                     </div>
-                    <select class="form-select col select1" id="inputGroupSelect01">
+                    <select class="form-select col" id="inputGroupSelect01">
                         <option selected>Dropdown</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
                       </select>
                   </div>
-                  <h5>Three Column</h5>
+                  <h4>Three Column</h4>
                   <div class="row">
                     <div class="col">
                       <input type="text" class="form-control" placeholder="Focus" aria-label="First name">
@@ -109,7 +109,7 @@
                         <input type="text" class="form-control disabled" placeholder="John Doe" aria-label="Last name" disabled>
                       </div>
                   </div>
-                  <h5>Four Column</h5>
+                  <h4>Four Column</h4>
                   <div class="row">
                     <div class="col">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -131,10 +131,11 @@
                           </select>
                       </div>
                   </div>
-                  <h5>Other Design Elements</h5>
-                  <h6>File Upload</h3>
-                    <button><img src="images/cloud-upload-icon.svg">Upload</button>
-                    <h6>Radio Button</h6>
+                  <h4>Other Design Elements</h4>
+                  <h5>File Upload</h5>
+                    <button class="btn btn-upload"><img src="images/cloud-upload-icon.svg">Upload</button>
+                    <span class="upload-text">No item Selected</span>
+                    <h5>Radio Button</h5>
                     <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                         <label class="form-check-label" for="inlineRadio1">Option 1</label>
@@ -143,33 +144,46 @@
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
                         <label class="form-check-label" for="inlineRadio2">Option 2</label>
                       </div>
-                      <h6>Check Box</h6>
+                      <h5>Check Box</h5>
                       <div class="form-check form-check-inline">
                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                         <label class="form-check-label" for="inlineCheckbox1">Option 1</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <input class="form-check-input checked" type="checkbox" id="inlineCheckbox2" value="option2">
                         <label class="form-check-label" for="inlineCheckbox2">Option 2</label>
                       </div>
-                      <h6>Snackbar</h6>
-                      <div class="alert alert-danger d-flex align-items-center" role="alert">
+                      <h5>Snackbar</h5>
+                      <div class="row">
+                      <div class="alert danger d-flex align-items-center col" role="alert">
                         <img src="images/error-icon.svg" class="error-img">
-                          This is an alert message
+                          This is an alert message!
                       </div>
-                      <div class="alert alert-warning d-flex align-items-center" role="alert">
-                        <img src="images/warning-icon.svg" class="error-img">
-                        This is an warning message
+                      <div class="alert primary d-flex align-items-center col" role="alert">
+                        <img src="images/info-icon.svg" class="error-img">
+                        This is an information message!
                       </div>
-                      <h6>Call to action</h6>
-                      <button type="button" class="btn btn-danger">Primary</button>
-                      <button type="button" class="btn">Secondary</button>
-                      <h6>Tabs</h6>
+                      </div>
+                      <div class="row">
+                        <div class="alert warning d-flex align-items-center col" role="alert">
+                          <img src="images/warning-icon.svg" class="error-img">
+                            This is an alert message!
+                        </div>
+                        <div class="alert success d-flex align-items-center col" role="alert">
+                          <img src="images/success-icon.svg" class="error-img">
+                          This is an Success message!
+                        </div>
+                        </div>
+                      <h5>Call to action</h5>
+                      <button type="button" class="btn btn-danger red">Primary</button>
+                      <button type="button" class="btn white">Secondary</button>
+                      <h5>Tabs</h5>
                       <div class="tab">
-                        <p>Tab 1</p>
-                        <p>Tab 2</p>
-                        <p>Tab 3</p>
+                        <p class="highlighted-tab tab-data"><strong>Tab 1</strong></p>
+                        <p class="tab-data">Tab 2</p>
+                        <p class="tab-data">Tab 3</p>
                       </div>
+                      <hr>
                       <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
                       </p>
@@ -178,3 +192,4 @@
          </div>
          </div>
 </body>
+</html>

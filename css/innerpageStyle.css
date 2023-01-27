@@ -105,3 +105,53 @@ h5{
     display: flex;
     flex-direction: row;
 }
+.btn-upload{
+    border: 1px solid #C8242F;
+border-radius: 18px;
+}
+.upload-text{
+    color: #ADADAD;
+    margin-left: 25px;
+}
+.alert{
+    margin: 0px 10px;
+    border-radius: 5px;
+}
+.danger{
+    border: 1px solid #FF3535;
+    color: #FF3535 ;
+}
+.primary{
+    border: 1px solid #00B9E1;
+    color:  #00B9E1 ;
+}
+.warning{
+    border: 1px solid #FFA800;
+    color: #FFA800 ;
+}
+.success{
+    border: 1px solid #00AF27;
+    color: #00AF27 ;
+}
+.red{border-radius: 23px;
+    width: 124px;
+    height: 45px;}
+.white{
+    width: 145px;
+height: 44px;
+border: 1px solid #C8242F;
+border-radius: 22px;
+color: #C8242F;
+margin-left: 20px;
+}
+.highlighted-tab{
+    color: #C8242F;
+    padding-bottom: 3px;
+    border-bottom:5px solid #C8242F;
+}
+.tab-data{
+    margin: 0px 20px;
+}
+/* .redborder{
+    border: 1px solid #C8242F;
+} */
