@@ -18,7 +18,7 @@
 <body>
    
     <div class="cont">
-        <img class="menu-logo"src="images\menu-bar.svg">
+        <img id="menu-logo" src="images\menu-bar.svg">
         <img src="images\header-logo.svg">
         <img class="nav-img search-icon"src="images\search-icon.svg">
         <input  class="search" placeholder="Search">
@@ -28,7 +28,7 @@
         <img class="nav-img"src="images\downward-arrow.svg">
     </div>
   <div class="main">
-   <aside class="sidebar">
+   <aside id="sidebar">
         <ul>
             <li class="active-box">
             <img class="img-logo" src="images\dashboard-active.svg">
@@ -239,7 +239,17 @@
         
     </div>
   </div>
- 
+  <script>
+    var s=document.getElementById("sidebar");
+    var x=document.getElementById("menu-logo");
+    x.addEventListener("click",()=> {
+         
+    })
+    document.getElementById("menu-logo").onclick = function() {
+      document.getElementById("sidebar").classList.toggle("display-none");
+    }
+    
+</script>
   
 </body>
 </html>

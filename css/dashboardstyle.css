@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
   }
-  .menu-logo {
+  #menu-logo {
     /* margin-top: 34px;
     margin-left: 29px; */
     height:  30px;
@@ -103,7 +103,7 @@
     margin-top: 10px;
     /* margin-left: 30px; */
   } 
-  .sidebar {
+  #sidebar {
     width: 200px;
     float: left;
   }
@@ -130,6 +130,7 @@
     flex-direction: row;
     margin: 10px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .rate-box{
     background-color: white;
@@ -244,4 +245,15 @@ table{
 }
 .table-head{
     margin: 30px 10px 10px 15px;
+}
+.display-none{
+  display: none;
+}
+@media screen and (max-width:600px){
+  .graphs{
+    flex-direction: column;
+    display: inline-block;
+    text-align: center;
+  }
+  
 }

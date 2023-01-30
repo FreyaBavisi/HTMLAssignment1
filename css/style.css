@@ -1,6 +1,6 @@
 #bgimg{
-   height: 500px;
-   width: 500px;
+   height: 600px;
+   width: 600px;
    box-shadow: 0px 4px 31px #0000000A;
    border: 20px solid #FFFFFF;
    opacity: 1;
@@ -77,3 +77,45 @@ span{
    width: 272px;
    height: 58px;
 }
+@media screen and (min-width:900px) and (max-width:1150px){
+   #left{
+      width: 30%;
+   }
+   #right{
+      width: 45%;
+   }
+   #bgimg{
+         height: 400px;
+         width: 400px;
+   }
+}
+@media screen and (min-width:360px) and (max-width:900px){
+   
+   #main{
+      flex-direction: column;
+      /* justify-content: center; */
+      display: inline-block;
+   text-align: center;
+
+   }
+   #bgimg{
+      height: 600px;
+      width: 600px;     
+   }
+   #left{
+      width: 100%;
+   }
+   #right{
+      width: 100%;
+      /* margin-left: 100px; */
+   }
+ 
+   button{
+      margin-left: 180px;
+      margin-right: 180px;
+   }
+
+   
+}
+
+   
